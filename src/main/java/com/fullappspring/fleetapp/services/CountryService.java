@@ -1,6 +1,7 @@
 package com.fullappspring.fleetapp.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,4 +26,14 @@ public class CountryService {
 		countryRepository.save(country);
 	}
 
+	//Get by id 
+	public Optional<Country> findById(int id) {
+		return countryRepository.findById(id);
+	}
+
+	//delete by id 
+	public void delete(Integer id) {
+		countryRepository.deleteById(id);
+		
+	}
 }
