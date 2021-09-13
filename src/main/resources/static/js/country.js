@@ -25,7 +25,8 @@ $('document').ready(function(){
           $('#confirmDeleteButton').attr('href', href);
 		  
 		  $('#deleteModal').modal(); 
-
+ 
+ 
 	});
 });
 
